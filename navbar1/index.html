@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins';
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar-logo {
+            color: #f2f2f2;
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .navbar-menu,
+        .navbar-sm-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-menu a,
+        .navbar-sm-menu a {
+            color: #f2f2f2;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 17px;
+        }
+
+        .navbar-sm-menu {
+            display: none;
+        }
+
+        .navbar-sm-menu a {
+            font-size: 30px;
+        }
+
+        .fixed{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width:500px) {
+            .navbar-menu {
+                display: none;
+            }
+
+            .navbar-sm-menu {
+                display: flex;                
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="navbar-logo" href="#">Logo</a>
+        <div class="navbar-sm-menu">
+            <a href="#">&#9776</a>
+        </div>
+        <div class="navbar-menu">
+            <a href="#anasayfa">Ana Sayfa</a>
+            <a href="#iletisim">İletişim</a>
+            <a href="#about">Hakkımızda</a>
+        </div>
+    </div>
+
+    <div style="margin-bottom:5000px"></div>
+</body>
+
+</html>

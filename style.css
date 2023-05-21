@@ -1,0 +1,22 @@
+/* Simple Selector => name,id,class */
+/* Combinator Selector */
+/* Pseudo Selector */
+/* Pesudo-elements Selector */
+/* Attribute Selector */
+
+/* name selector */
+/* Açıklama Satırı */
+h1 { /*Açıklama Satırı*/
+    color /*Açıklama SAtırı*/:red; /*Açıklama Satırı*/
+    
+}
+
+/* id selector */
+#name{
+    color: red;
+}
+
+/* class */
+.name{
+    color: red;
+}
