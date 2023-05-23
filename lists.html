@@ -58,6 +58,10 @@
         .navbar1 a:hover {
             color: orange;
         }
+
+        .active{
+            color: orange !important;
+        }
     </style>
 </head>
 
@@ -66,12 +70,12 @@
     <nav class="navbar1">
         <div>
             <a href="">Logo</a>
-        </div>        
-        <div>            
-            <a href="#">
+        </div>
+        <div>
+            <a class="active" href="#">
                 <i class="fa fa-home"></i>
                 Home
-            </a>            
+            </a> 
             <a href="#">About</a>
             <a href="#">Contact</a>
         </div>
@@ -81,7 +85,7 @@
         <a href="">Logo</a>
         <ul>
             <li>
-                <a href="#">
+                <a class="active" href="#">
                     <i class="fa fa-home"></i>
                     Home
                 </a>               
@@ -92,7 +96,9 @@
                 About
                 </a>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
         </ul>        
     </nav>
     <!-- <ol>        
