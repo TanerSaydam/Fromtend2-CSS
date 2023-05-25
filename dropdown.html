@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <title>Dropdown</title>
+
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: green;
+            color: white;
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button>Benim Üzerime Gel!</button>
+        <div class="dropdown-content">
+            <h2>Hello</h2>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam sapiente, quo nobis corporis illum labore sed voluptates veniam in distinctio id magni qui minima dolores tempora ad placeat adipisci.</p>
+</body>
+</html>
