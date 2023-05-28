@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>     
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Media Query</title>
+    <style>
+        /* Büyük Masaüstü min-width:1200px */
+        /* Masaüstü min-width:992px */
+        /* Tablet için min-width:768px */
+        /* Büyük Ekran Telefon min-width:600px */
+        /* Telefon max-width:600px */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper{
+            overflow: auto;
+        } 
+
+        .main{
+            margin-left: 4px;
+        }        
+
+        .menuitem{
+            background: #CDF0F6;
+            border: 1px solid #d4d4d4;
+            border-radius: 4px;
+            list-style-type: none;
+            margin: 4px;
+            padding: 2px;
+        }
+
+        @media screen and (min-width:480px){
+            .leftsidebar{
+                width: 25%;
+                float: left;                                
+            }
+
+            .main{
+                margin-left: 10px;
+            }
+        }
+        
+
+        /* body{
+            background-color: pink;
+        } */
+
+        /* all => tüm cihazlar */
+        /* print => yazıcı ekranlar */
+        /* screen => PC, tablet, telefon */
+        /* speech => Konuşabilen ekranları */
+        /* 0 - 199px */
+        /* @media screen and (min-width:480px){ 
+            body{
+                background-color: lightblue;
+            }
+        } */
+
+    
+    </style>
+</head>
+<body>
+    <!-- <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, dolores.</p> -->
+
+    <div class="wrapper">
+        <div class="leftsidebar">
+            <ul class="menulist">
+                <li class="menuitem">Menü 1</li>
+                <li class="menuitem">Menü 2</li>
+                <li class="menuitem">Menü 3</li>
+                <li class="menuitem">Menü 4</li>
+                <li class="menuitem">Menü 5</li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti neque quo ipsam tempore nostrum dolorum modi, labore voluptate, repellat nisi quaerat saepe, deleniti vitae perspiciatis? Quas delectus vero iusto voluptatum!</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>

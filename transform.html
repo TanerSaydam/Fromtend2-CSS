@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Transform</title>
+    <style>
+        /* Translate, rotate, scale, skew, matrix */
+        div{
+            margin: 50px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: red;            
+            /* transition: transform 5s ease; */
+            
+        }
+
+        @keyframes spin{
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(1turn);
+            }
+        }
+
+        div:hover{
+            animation: spin 3s linear infinite;
+            /* transform: translate(50px,500px); */
+            /* transform: rotate(2turn); */
+            /* transform: scale(1.5); */
+            /* transform: skew(1turn); */
+            /* transform: matrix(scaleX(1.5), skewY(20deg), skewX(20deg),scaleY(1.5),translateX(50px), translateY(50px)); */
+        }
+    </style>
+</head>
+<body>
+    <h1>2D / 3D</h1>
+    <div></div>
+</body>
+</html>

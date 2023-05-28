@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Example</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+       
+        .row:after{
+            content:'';
+            display: table;
+            clear: both;                        
+        }
+
+        .col{            
+            float: left;            
+            width: 25%;
+            padding: 25px;
+        }
+
+        @media (max-width:992px){
+            .col{
+                width: 50%;
+            }
+        }
+
+        @media (max-width:600px){
+            .col{
+                width: 100%;
+            }
+        }
+
+        /* .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col{
+            flex:25%;
+            padding: 20px;
+        }
+
+        @media (max-width:992px){
+            .col{
+                flex: 50%
+            }
+        }
+
+        @media (max-width:600px){
+            .col{
+                flex: 100%
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col" style="background-color: #aaa;">
+            <h2>Column 1</h2>
+            <p>Some Text...</p>
+        </div>
+        <div class="col" style="background-color: #bbb;">
+            <h2>Column 1</h2>
+            <p>Some Text...</p>
+        </div>
+        <div class="col" style="background-color: #ccc;">
+            <h2>Column 1</h2>
+            <p>Some Text...</p>
+        </div>
+        <div class="col" style="background-color: #ddd;">
+            <h2>Column 1</h2>
+            <p>Some Text...</p>
+        </div>
+    </div>
+
+    <div>
+        <h1>footer</h1>
+    </div>
+</body>
+</html>
