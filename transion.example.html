@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            position: relative;
+        }
+
+        .overlay{
+            position: absolute;            
+            background-color: #008cba;
+            top: 0;
+            width: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+            height: 100%;
+            right: 0;
+            overflow: hidden;
+            transition: width .3s ease;
+        }      
+
+        .container:hover .overlay{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <div class="container" style="width: 50%;">
+        <img src="https://www.w3schools.com/css/img_avatar.png" alt="" style="width: 100%">
+        <div class="overlay">
+            <div class="text">Hello World!</div>
+        </div>
+    </div>
+</body>
+</html>
